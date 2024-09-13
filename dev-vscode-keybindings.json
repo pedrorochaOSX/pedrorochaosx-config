@@ -1,5 +1,22 @@
 [
 	{
+		"key": "ctrl+backspace",
+		"command": "deleteWordLeft"
+	},
+	{
+		"key": "ctrl+shift+backspace",
+		"command": "deleteWordRight",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+right",
+		"command": "cursorLineEnd"
+	},
+	{
+		"key": "alt+left",
+		"command": "cursorLineStart"
+	},
+	{
 		"key": "ctrl+z",
 		"command": "undo"
 	},
@@ -1446,5 +1463,30 @@
 		"key": "alt+p",
 		"command": "-toggleSearchPreserveCase",
 		"when": "searchViewletFocus"
+	},
+	{
+		"key": "shift+delete",
+		"command": "-deleteFile",
+		"when": "filesExplorerFocus && foldersViewVisible && !explorerResourceReadonly && !inputFocus"
+	},
+	{
+		"key": "ctrl+delete",
+		"command": "-deleteWordRight",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+right",
+		"command": "-workbench.action.terminal.focusNextPane",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "alt+right",
+		"command": "-quickInput.acceptInBackground",
+		"when": "cursorAtEndOfQuickInputBox && inQuickInput && quickInputType == 'quickPick' || inQuickInput && !inputFocus && quickInputType == 'quickPick'"
+	},
+	{
+		"key": "alt+left",
+		"command": "-workbench.action.terminal.focusPreviousPane",
+		"when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
 	},
 ]
