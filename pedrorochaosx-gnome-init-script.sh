@@ -330,91 +330,91 @@ gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items false;
 gsettings set org.gnome.shell.extensions.dash-to-dock workspace-agnostic-urgent-windows true;
 echo "org-gnome-shell-extensions-dash-to-dock has been changed successfully.";
 
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout0 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout1 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout10 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout11 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout12 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout13 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout14 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout15 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout16 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout17 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout18 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout19 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout2 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout3 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout4 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout5 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout6 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout7 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout8 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout9 '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint 1
-gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint-border-size 5
-gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint-color 'rgb(211,70,21)'
-gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint-inner-border-size 0
-gsettings set org.gnome.shell.extensions.tiling-assistant adapt-edge-tiling-to-favorite-layout false
-gsettings set org.gnome.shell.extensions.tiling-assistant auto-tile '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant center-window '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant debugging-free-rects '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant debugging-show-tiled-rects '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant default-move-mode 0
-gsettings set org.gnome.shell.extensions.tiling-assistant disable-tile-groups false
-gsettings set org.gnome.shell.extensions.tiling-assistant dynamic-keybinding-behavior 0
-gsettings set org.gnome.shell.extensions.tiling-assistant enable-advanced-experimental-features false
-gsettings set org.gnome.shell.extensions.tiling-assistant enable-hold-maximize-inverse-landscape false
-gsettings set org.gnome.shell.extensions.tiling-assistant enable-hold-maximize-inverse-portrait false
-gsettings set org.gnome.shell.extensions.tiling-assistant enable-raise-tile-group true
-gsettings set org.gnome.shell.extensions.tiling-assistant enable-tile-animations false
-gsettings set org.gnome.shell.extensions.tiling-assistant enable-tiling-popup false
-gsettings set org.gnome.shell.extensions.tiling-assistant enable-untile-animations false
-gsettings set org.gnome.shell.extensions.tiling-assistant favorite-layout -1
-gsettings set org.gnome.shell.extensions.tiling-assistant favorite-layouts '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant horizontal-preview-area 15
-gsettings set org.gnome.shell.extensions.tiling-assistant ignore-ta-mod 0
-gsettings set org.gnome.shell.extensions.tiling-assistant import-layout-examples true
-gsettings set org.gnome.shell.extensions.tiling-assistant low-performance-move-mode false
-gsettings set org.gnome.shell.extensions.tiling-assistant maximize-with-gap false
-gsettings set org.gnome.shell.extensions.tiling-assistant monitor-switch-grace-period true
-gsettings set org.gnome.shell.extensions.tiling-assistant move-adaptive-tiling-mod 1
-gsettings set org.gnome.shell.extensions.tiling-assistant move-favorite-layout-mod 2
-gsettings set org.gnome.shell.extensions.tiling-assistant restore-window "['']"
-gsettings set org.gnome.shell.extensions.tiling-assistant restore-window-size-on 0
-gsettings set org.gnome.shell.extensions.tiling-assistant screen-bottom-gap 0
-gsettings set org.gnome.shell.extensions.tiling-assistant screen-left-gap 0
-gsettings set org.gnome.shell.extensions.tiling-assistant screen-right-gap 0
-gsettings set org.gnome.shell.extensions.tiling-assistant screen-top-gap 0
-gsettings set org.gnome.shell.extensions.tiling-assistant search-popup-layout '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant show-layout-panel-indicator false
-gsettings set org.gnome.shell.extensions.tiling-assistant single-screen-gap 0
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottom-half "['<Super>KP_2']"
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottom-half-ignore-ta '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomleft-quarter "['<Super>KP_1']"
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomleft-quarter-ignore-ta '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomright-quarter "['<Super>KP_3']"
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomright-quarter-ignore-ta '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-edit-mode '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half "['<Super>a', '<Super>Left', '<Super>KP_4']"
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half-ignore-ta '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize "['<Super>w', '<Super>Up', '<Super>KP_5']"
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize-horizontally '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize-vertically '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half "['<Super>d', '<Super>Right', '<Super>KP_6']"
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half-ignore-ta '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-top-half "['<Super>KP_8']"
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-top-half-ignore-ta '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-topleft-quarter "['<Super>KP_7']"
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-topleft-quarter-ignore-ta '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-topright-quarter "['<Super>KP_9']"
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-topright-quarter-ignore-ta '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant tilegroups-in-app-switcher false
-gsettings set org.gnome.shell.extensions.tiling-assistant tiling-popup-all-workspace true
-gsettings set org.gnome.shell.extensions.tiling-assistant toggle-always-on-top '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant toggle-maximize-tophalf-timer 600
-gsettings set org.gnome.shell.extensions.tiling-assistant toggle-tiling-popup '@as []'
-gsettings set org.gnome.shell.extensions.tiling-assistant vertical-preview-area 15
-gsettings set org.gnome.shell.extensions.tiling-assistant window-gap 0
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout0 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout1 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout10 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout11 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout12 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout13 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout14 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout15 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout16 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout17 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout18 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout19 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout2 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout3 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout4 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout5 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout6 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout7 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout8 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout9 '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint 1;
+gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint-border-size 5;
+gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint-color 'rgb(211,70,21)';
+gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint-inner-border-size 0;
+gsettings set org.gnome.shell.extensions.tiling-assistant adapt-edge-tiling-to-favorite-layout false;
+gsettings set org.gnome.shell.extensions.tiling-assistant auto-tile '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant center-window '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant debugging-free-rects '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant debugging-show-tiled-rects '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant default-move-mode 0;
+gsettings set org.gnome.shell.extensions.tiling-assistant disable-tile-groups false;
+gsettings set org.gnome.shell.extensions.tiling-assistant dynamic-keybinding-behavior 0;
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-advanced-experimental-features false;
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-hold-maximize-inverse-landscape false;
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-hold-maximize-inverse-portrait false;
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-raise-tile-group true;
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-tile-animations false;
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-tiling-popup false;
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-untile-animations false;
+gsettings set org.gnome.shell.extensions.tiling-assistant favorite-layout -1;
+gsettings set org.gnome.shell.extensions.tiling-assistant favorite-layouts '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant horizontal-preview-area 15;
+gsettings set org.gnome.shell.extensions.tiling-assistant ignore-ta-mod 0;
+gsettings set org.gnome.shell.extensions.tiling-assistant import-layout-examples true;
+gsettings set org.gnome.shell.extensions.tiling-assistant low-performance-move-mode false;
+gsettings set org.gnome.shell.extensions.tiling-assistant maximize-with-gap false;
+gsettings set org.gnome.shell.extensions.tiling-assistant monitor-switch-grace-period true;
+gsettings set org.gnome.shell.extensions.tiling-assistant move-adaptive-tiling-mod 1;
+gsettings set org.gnome.shell.extensions.tiling-assistant move-favorite-layout-mod 2;
+gsettings set org.gnome.shell.extensions.tiling-assistant restore-window "['']";
+gsettings set org.gnome.shell.extensions.tiling-assistant restore-window-size-on 0;
+gsettings set org.gnome.shell.extensions.tiling-assistant screen-bottom-gap 0;
+gsettings set org.gnome.shell.extensions.tiling-assistant screen-left-gap 0;
+gsettings set org.gnome.shell.extensions.tiling-assistant screen-right-gap 0;
+gsettings set org.gnome.shell.extensions.tiling-assistant screen-top-gap 0;
+gsettings set org.gnome.shell.extensions.tiling-assistant search-popup-layout '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant show-layout-panel-indicator false;
+gsettings set org.gnome.shell.extensions.tiling-assistant single-screen-gap 0;
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottom-half "['<Super>KP_2']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottom-half-ignore-ta '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomleft-quarter "['<Super>KP_1']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomleft-quarter-ignore-ta '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomright-quarter "['<Super>KP_3']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomright-quarter-ignore-ta '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-edit-mode '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half "['<Super>a', '<Super>Left', '<Super>KP_4']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half-ignore-ta '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize "['<Super>w', '<Super>Up', '<Super>KP_5']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize-horizontally '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize-vertically '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half "['<Super>d', '<Super>Right', '<Super>KP_6']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half-ignore-ta '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-top-half "['<Super>KP_8']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-top-half-ignore-ta '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-topleft-quarter "['<Super>KP_7']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-topleft-quarter-ignore-ta '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-topright-quarter "['<Super>KP_9']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-topright-quarter-ignore-ta '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant tilegroups-in-app-switcher false;
+gsettings set org.gnome.shell.extensions.tiling-assistant tiling-popup-all-workspace true;
+gsettings set org.gnome.shell.extensions.tiling-assistant toggle-always-on-top '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant toggle-maximize-tophalf-timer 600;
+gsettings set org.gnome.shell.extensions.tiling-assistant toggle-tiling-popup '@as []';
+gsettings set org.gnome.shell.extensions.tiling-assistant vertical-preview-area 15;
+gsettings set org.gnome.shell.extensions.tiling-assistant window-gap 0;
 
 echo "org.gnome.shell.extensions.tiling-assistant has been changed successfully.";
 read -n 1 -s -r -p "Press return to finish..."
