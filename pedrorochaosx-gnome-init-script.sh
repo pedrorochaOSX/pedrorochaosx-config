@@ -2,8 +2,6 @@ cd;
 cat << 'catEND' > prosx-gsettings.sh
 #!/bin/bash
 
-#!/bin/bash
-
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "['<Super>e']";
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "@as []";
 gsettings set org.gnome.desktop.wm.keybindings begin-move "@as []";
@@ -19,7 +17,7 @@ gsettings set org.gnome.desktop.wm.keybindings lower "@as []";
 gsettings set org.gnome.desktop.wm.keybindings maximize "@as []";
 gsettings set org.gnome.desktop.wm.keybindings maximize-horizontally "@as []";
 gsettings set org.gnome.desktop.wm.keybindings maximize-vertically "@as []";
-gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>s']";
+gsettings set org.gnome.desktop.wm.keybindings minimize "['']";
 gsettings set org.gnome.desktop.wm.keybindings move-to-center "@as []";
 gsettings set org.gnome.desktop.wm.keybindings move-to-corner-ne "@as ['']";
 gsettings set org.gnome.desktop.wm.keybindings move-to-corner-nw "@as ['']";
@@ -420,7 +418,6 @@ gsettings set org.gnome.shell.extensions.tiling-assistant window-gap 0
 
 echo "org.gnome.shell.extensions.tiling-assistant has been changed successfully.";
 read -n 1 -s -r -p "Press return to finish..."
-
 catEND
 chmod +x prosx-gsettings.sh;
 echo "Created prosx-gsettings.sh";
