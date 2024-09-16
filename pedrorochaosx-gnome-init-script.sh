@@ -2,7 +2,9 @@ cd;
 cat << 'catEND' > prosx-gsettings.sh
 #!/bin/bash
 
-gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "['<Super>w']";
+#!/bin/bash
+
+gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "['<Super>e']";
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "@as []";
 gsettings set org.gnome.desktop.wm.keybindings begin-move "@as []";
 gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Super>r']";
@@ -17,10 +19,10 @@ gsettings set org.gnome.desktop.wm.keybindings lower "@as []";
 gsettings set org.gnome.desktop.wm.keybindings maximize "@as []";
 gsettings set org.gnome.desktop.wm.keybindings maximize-horizontally "@as []";
 gsettings set org.gnome.desktop.wm.keybindings maximize-vertically "@as []";
-gsettings set org.gnome.desktop.wm.keybindings minimize "['<Control><Super>Down']";
+gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>s']";
 gsettings set org.gnome.desktop.wm.keybindings move-to-center "@as []";
-gsettings set org.gnome.desktop.wm.keybindings move-to-corner-ne "@as ['Control><Super>Right']";
-gsettings set org.gnome.desktop.wm.keybindings move-to-corner-nw "@as ['<Control><Super>Left']";
+gsettings set org.gnome.desktop.wm.keybindings move-to-corner-ne "@as ['']";
+gsettings set org.gnome.desktop.wm.keybindings move-to-corner-nw "@as ['']";
 gsettings set org.gnome.desktop.wm.keybindings move-to-corner-se "@as []";
 gsettings set org.gnome.desktop.wm.keybindings move-to-corner-sw "@as []";
 gsettings set org.gnome.desktop.wm.keybindings move-to-monitor-down "['<Super><Shift>Down']";
@@ -45,8 +47,8 @@ gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-8 "@as []";
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-9 "@as []";
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-down "[]";
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-last "@as []";
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Control><Super>a']";
-gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Control><Super>d']";
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-left "['<Shift><Super>a']";
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-right "['<Shift><Super>d']";
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-up "[]";
 gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['<Alt>F1']";
 gsettings set org.gnome.desktop.wm.keybindings panel-run-dialog "@as []";
@@ -76,14 +78,14 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-8 "@as []";
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-9 "@as []";
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "[]";
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "@as []";
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>a']";
-gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>d']";
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Control><Super>a']";
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Control><Super>d']";
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "[]";
 gsettings set org.gnome.desktop.wm.keybindings switch-windows "@as []";
 gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "@as []";
 gsettings set org.gnome.desktop.wm.keybindings toggle-above "@as []";
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']";
-gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Control><Super>Up']";
+gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['']";
 gsettings set org.gnome.desktop.wm.keybindings toggle-on-all-workspaces "@as ['']";
 gsettings set org.gnome.desktop.wm.keybindings unmaximize "@as []";
 echo "org.gnome.desktop.wm.keybindings has been changed successfully.";
@@ -330,10 +332,95 @@ gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items false;
 gsettings set org.gnome.shell.extensions.dash-to-dock workspace-agnostic-urgent-windows true;
 echo "org-gnome-shell-extensions-dash-to-dock has been changed successfully.";
 
-gsettings set org.gnome.shell.extensions.tiling-assistant enable-tile-animations false;
-gsettings set org.gnome.shell.extensions.tiling-assistant enable-tiling-popup false;
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout0 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout1 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout10 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout11 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout12 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout13 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout14 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout15 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout16 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout17 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout18 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout19 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout2 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout3 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout4 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout5 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout6 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout7 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout8 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout9 '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint 1
+gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint-border-size 5
+gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint-color 'rgb(211,70,21)'
+gsettings set org.gnome.shell.extensions.tiling-assistant active-window-hint-inner-border-size 0
+gsettings set org.gnome.shell.extensions.tiling-assistant adapt-edge-tiling-to-favorite-layout false
+gsettings set org.gnome.shell.extensions.tiling-assistant auto-tile '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant center-window '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant debugging-free-rects '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant debugging-show-tiled-rects '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant default-move-mode 0
+gsettings set org.gnome.shell.extensions.tiling-assistant disable-tile-groups false
+gsettings set org.gnome.shell.extensions.tiling-assistant dynamic-keybinding-behavior 0
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-advanced-experimental-features false
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-hold-maximize-inverse-landscape false
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-hold-maximize-inverse-portrait false
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-raise-tile-group true
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-tile-animations false
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-tiling-popup false
+gsettings set org.gnome.shell.extensions.tiling-assistant enable-untile-animations false
+gsettings set org.gnome.shell.extensions.tiling-assistant favorite-layout -1
+gsettings set org.gnome.shell.extensions.tiling-assistant favorite-layouts '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant horizontal-preview-area 15
+gsettings set org.gnome.shell.extensions.tiling-assistant ignore-ta-mod 0
+gsettings set org.gnome.shell.extensions.tiling-assistant import-layout-examples true
+gsettings set org.gnome.shell.extensions.tiling-assistant low-performance-move-mode false
+gsettings set org.gnome.shell.extensions.tiling-assistant maximize-with-gap false
+gsettings set org.gnome.shell.extensions.tiling-assistant monitor-switch-grace-period true
+gsettings set org.gnome.shell.extensions.tiling-assistant move-adaptive-tiling-mod 1
+gsettings set org.gnome.shell.extensions.tiling-assistant move-favorite-layout-mod 2
+gsettings set org.gnome.shell.extensions.tiling-assistant restore-window "['']"
+gsettings set org.gnome.shell.extensions.tiling-assistant restore-window-size-on 0
+gsettings set org.gnome.shell.extensions.tiling-assistant screen-bottom-gap 0
+gsettings set org.gnome.shell.extensions.tiling-assistant screen-left-gap 0
+gsettings set org.gnome.shell.extensions.tiling-assistant screen-right-gap 0
+gsettings set org.gnome.shell.extensions.tiling-assistant screen-top-gap 0
+gsettings set org.gnome.shell.extensions.tiling-assistant search-popup-layout '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant show-layout-panel-indicator false
+gsettings set org.gnome.shell.extensions.tiling-assistant single-screen-gap 0
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottom-half "['<Super>KP_2']"
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottom-half-ignore-ta '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomleft-quarter "['<Super>KP_1']"
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomleft-quarter-ignore-ta '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomright-quarter "['<Super>KP_3']"
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomright-quarter-ignore-ta '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-edit-mode '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half "['<Super>a', '<Super>Left', '<Super>KP_4']"
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half-ignore-ta '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize "['<Super>w', '<Super>Up', '<Super>KP_5']"
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize-horizontally '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize-vertically '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half "['<Super>d', '<Super>Right', '<Super>KP_6']"
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half-ignore-ta '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-top-half "['<Super>KP_8']"
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-top-half-ignore-ta '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-topleft-quarter "['<Super>KP_7']"
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-topleft-quarter-ignore-ta '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-topright-quarter "['<Super>KP_9']"
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-topright-quarter-ignore-ta '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant tilegroups-in-app-switcher false
+gsettings set org.gnome.shell.extensions.tiling-assistant tiling-popup-all-workspace true
+gsettings set org.gnome.shell.extensions.tiling-assistant toggle-always-on-top '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant toggle-maximize-tophalf-timer 600
+gsettings set org.gnome.shell.extensions.tiling-assistant toggle-tiling-popup '@as []'
+gsettings set org.gnome.shell.extensions.tiling-assistant vertical-preview-area 15
+gsettings set org.gnome.shell.extensions.tiling-assistant window-gap 0
+
 echo "org.gnome.shell.extensions.tiling-assistant has been changed successfully.";
 read -n 1 -s -r -p "Press return to finish..."
+
 catEND
 chmod +x prosx-gsettings.sh;
 echo "Created prosx-gsettings.sh";
