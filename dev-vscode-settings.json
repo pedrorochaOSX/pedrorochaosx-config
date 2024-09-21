@@ -25,6 +25,7 @@
 	"workbench.editor.labelFormat" : "short",
 	"workbench.commandPalette.history": 20,
 	"workbench.editor.empty.hint": "hidden",
+	"workbench.sideBar.location": "right",
     "debug.console.fontSize": 12,
     "debug.console.fontFamily": "",
     "terminal.integrated.fontSize": 12,
