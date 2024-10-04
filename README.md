@@ -1,2 +1,2 @@
 # pedrorochaOSX-config
-Some keybindings and preferred settings.
+My keybindings and settings.
