@@ -417,18 +417,9 @@ gsettings set org.gnome.shell.extensions.tiling-assistant vertical-preview-area 
 gsettings set org.gnome.shell.extensions.tiling-assistant window-gap 0;
 echo "org.gnome.shell.extensions.tiling-assistant has been changed successfully.";
 
-gsettings set org.gnome.settings-daemon.plugins.power ambient-enabled true;
-gsettings set org.gnome.settings-daemon.plugins.power idle-brightness 30;
-gsettings set org.gnome.settings-daemon.plugins.power idle-dim false;
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-ac-action 'suspend';
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-battery-action 'suspend';
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-suspend-with-external-monitor false;
-gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'suspend';
-gsettings set org.gnome.settings-daemon.plugins.power power-saver-profile-on-low-battery false;
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 3600;
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing';
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 900;
-gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-type 'nothing';
 echo "org.gnome.settings-daemon.plugins.power has been changed successfully.";
 
 read -n 1 -s -r -p "Press return to finish..."
