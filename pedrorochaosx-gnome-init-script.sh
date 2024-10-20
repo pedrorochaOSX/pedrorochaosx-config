@@ -103,7 +103,7 @@ gsettings set org.gnome.shell.keybindings screenshot-window "[]";
 gsettings set org.gnome.shell.keybindings shift-overview-down "['<Super>z']";
 gsettings set org.gnome.shell.keybindings shift-overview-up "['<Super>x']";
 gsettings set org.gnome.shell.keybindings show-screen-recording-ui "[]";
-gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>1']";
+gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Super>t']";
 gsettings set org.gnome.shell.keybindings switch-to-application-1 "[]";
 gsettings set org.gnome.shell.keybindings switch-to-application-2 "[]";
 gsettings set org.gnome.shell.keybindings switch-to-application-3 "[]";
