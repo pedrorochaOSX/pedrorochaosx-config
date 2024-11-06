@@ -422,7 +422,8 @@ gsettings set org.gnome.settings-daemon.plugins.power lid-close-battery-action '
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-suspend-with-external-monitor false;
 echo "org.gnome.settings-daemon.plugins.power has been changed successfully.";
 
-gsettings set org.gnome.desktop.peripherals.keyboard delay "uint32 300";
+gsettings set org.gnome.desktop.peripherals.keyboard delay "uint32 250";
+gsettings set org.gnome.desktop.peripherals.keyboard repeat true
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval "uint32 15";
 echo "org.gnome.desktop.peripherals.keyboard has been changed successfully.";
 
