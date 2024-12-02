@@ -433,8 +433,8 @@ chmod +x prosx-gsettings.sh;
 echo "Created prosx-gsettings.sh";
 
 cat << 'catEND' > prosx-lsblk.sh
-lsblk -o NAME,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS -J;
-lsblk -o NAME,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS
+lsblk -o NAME,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS -J;
+lsblk -o NAME,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS
 catEND
 echo "Created prosx-lsblk.sh";
 chmod +x prosx-lsblk.sh
