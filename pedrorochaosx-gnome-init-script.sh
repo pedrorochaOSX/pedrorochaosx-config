@@ -226,7 +226,7 @@ echo "org.gnome.settings-daemon.plugins.media-keys has been changed successfully
 gsettings set org.gnome.shell.extensions.dash-to-dock activate-single-window true;
 gsettings set org.gnome.shell.extensions.dash-to-dock always-center-icons false;
 gsettings set org.gnome.shell.extensions.dash-to-dock animate-show-apps true;
-gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.20000000000000001;
+gsettings set org.gnome.shell.extensions.dash-to-dock animation-time 0.1801;
 gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-1 "[]";
 gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-2 "[]";
 gsettings set org.gnome.shell.extensions.dash-to-dock app-ctrl-hotkey-3 "[]";
