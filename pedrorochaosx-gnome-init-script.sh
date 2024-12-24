@@ -274,7 +274,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-running-dots-
 gsettings set org.gnome.shell.extensions.dash-to-dock custom-theme-shrink true;
 gsettings set org.gnome.shell.extensions.dash-to-dock customize-alphas false;
 gsettings set org.gnome.shell.extensions.dash-to-dock dance-urgent-applications true;
-gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 48;
+gsettings set org.gnome.shell.extensions.dash-to-dock dash-max-icon-size 40;
 gsettings set org.gnome.shell.extensions.dash-to-dock default-windows-preview-to-open false;
 gsettings set org.gnome.shell.extensions.dash-to-dock disable-overview-on-startup true;
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false;
