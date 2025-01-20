@@ -1,7 +1,9 @@
 cd;
-cat << 'catEND' > prosx-gsettings.sh
+echo "1/5 Creating p-gsettings.sh";
+cat << 'catEND' > p-gsettings.sh
 #!/bin/bash
 
+echo "1/8 Changing org.gnome.desktop.wm.keybindings";
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "['<Super>e']";
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "[]";
 gsettings set org.gnome.desktop.wm.keybindings begin-move "[]";
@@ -86,15 +88,15 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']";
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Super>w', '<Super>Up', '<Super>KP_5']";
 gsettings set org.gnome.desktop.wm.keybindings toggle-on-all-workspaces "[]";
 gsettings set org.gnome.desktop.wm.keybindings unmaximize "[]";
-echo "org.gnome.desktop.wm.keybindings has been changed successfully.";
 
+echo "2/8 Changing org.gnome.mutter.keybindings.";
 gsettings set org.gnome.mutter.keybindings cancel-input-capture "['<Super><Shift>Escape']";
 gsettings set org.gnome.mutter.keybindings rotate-monitor "['XF86RotateWindows']";
 gsettings set org.gnome.mutter.keybindings switch-monitor "['<Super>p', 'XF86Display']";
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Super>a', '<Super>Left', '<Super>KP_4']";
 gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Super>d', '<Super>Right', '<Super>KP_6']";
-echo "org.gnome.mutter.keybindings has been changed successfully.";
 
+echo "3/8 Changing org.gnome.shell.keybindings.";
 gsettings set org.gnome.shell.keybindings focus-active-notification "[]";
 gsettings set org.gnome.shell.keybindings open-new-window-application-1 "[]";
 gsettings set org.gnome.shell.keybindings open-new-window-application-2 "[]";
@@ -124,8 +126,8 @@ gsettings set org.gnome.shell.keybindings toggle-application-view "[]";
 gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>v']";
 gsettings set org.gnome.shell.keybindings toggle-overview "[]";
 gsettings set org.gnome.shell.keybindings toggle-quick-settings "['<Super>b']";
-echo "org.gnome.shell.keybindings has been changed successfully.";
 
+echo "4/8 Changing org.gnome.settings-daemon.plugins.media-keys.";
 gsettings set org.gnome.settings-daemon.plugins.media-keys battery-status "[]";
 gsettings set org.gnome.settings-daemon.plugins.media-keys battery-status-static "['XF86Battery']";
 gsettings set org.gnome.settings-daemon.plugins.media-keys calculator "[]";
@@ -228,8 +230,8 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up-quiet-stati
 gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up-static "[]";
 gsettings set org.gnome.settings-daemon.plugins.media-keys www "[]";
 gsettings set org.gnome.settings-daemon.plugins.media-keys www-static "['XF86WWW']";
-echo "org.gnome.settings-daemon.plugins.media-keys has been changed successfully.";
 
+echo "5/8 Changing org.gnome.shell.extensions.dash-to-dock.";
 gsettings set org.gnome.shell.extensions.dash-to-dock activate-single-window true;
 gsettings set org.gnome.shell.extensions.dash-to-dock always-center-icons false;
 gsettings set org.gnome.shell.extensions.dash-to-dock animate-show-apps true;
@@ -338,8 +340,8 @@ gsettings set org.gnome.shell.extensions.dash-to-dock show-windows-preview true;
 gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode 'DEFAULT';
 gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items false;
 gsettings set org.gnome.shell.extensions.dash-to-dock workspace-agnostic-urgent-windows true;
-echo "org-gnome-shell-extensions-dash-to-dock has been changed successfully.";
 
+echo "6/8 Changing org.gnome.shell.extensions.tiling-assistant.";
 gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout0 '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout1 '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout10 '[]';
@@ -425,26 +427,55 @@ gsettings set org.gnome.shell.extensions.tiling-assistant toggle-maximize-tophal
 gsettings set org.gnome.shell.extensions.tiling-assistant toggle-tiling-popup '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant vertical-preview-area 15;
 gsettings set org.gnome.shell.extensions.tiling-assistant window-gap 0;
-echo "org.gnome.shell.extensions.tiling-assistant has been changed successfully.";
 
+echo "7/8 Changing org.gnome.settings-daemon.plugins.power.";
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-ac-action 'suspend';
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-battery-action 'suspend';
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-suspend-with-external-monitor false;
-echo "org.gnome.settings-daemon.plugins.power has been changed successfully.";
 
+echo "8/8 Changing org.gnome.desktop.peripherals.keyboard.";
 gsettings set org.gnome.desktop.peripherals.keyboard delay "uint32 250";
 gsettings set org.gnome.desktop.peripherals.keyboard repeat true
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval "uint32 15";
-echo "org.gnome.desktop.peripherals.keyboard has been changed successfully.";
 
-read -n 1 -s -r -p "Press a key to quit..."
+read -n 1 -s -r -p "Press Q key to finish..."
 catEND
-chmod +x prosx-gsettings.sh;
-echo "Created prosx-gsettings.sh";
+chmod +x p-gsettings.sh;
 
-cat << 'catEND' > prosx-lsblk.sh
+echo "2/5 Creating p-gterminal.preferences";
+cat << 'catEND' > p-gterminal.preferences
+[legacy/profiles:]
+default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9']
+
+[legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+background-color='rgb(28,28,28)'
+background-transparency-percent=9
+backspace-binding='ascii-delete'
+cursor-blink-mode='on'
+cursor-shape='block'
+font='Noto Mono 12'
+foreground-color='rgb(208,207,204)'
+use-system-font=false
+use-theme-colors=false
+use-theme-transparency=false
+use-transparent-background=true
+visible-name='pedrorochaosx'
+catEND
+
+echo "3/5 Loading p-gterminal.preferences";
+cat << 'catEND' > p-gterminal.sh
+cat ~/p-gterminal.preferences | dconf load /org/gnome/terminal/
+catEND
+chmod +x p-gterminal.sh;
+./p-gterminal.sh;
+
+echo "4/5 Creating p-lsblk.sh";
+cat << 'catEND' > p-lsblk.sh
 lsblk -o NAME,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS -J;
 lsblk -o NAME,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS
 catEND
-echo "Created prosx-lsblk.sh";
 chmod +x prosx-lsblk.sh
+
+echo "5/5 Loading p-gsettings.sh";
+./p-gsettings.sh;
