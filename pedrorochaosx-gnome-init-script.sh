@@ -83,10 +83,17 @@ gsettings set org.gnome.desktop.wm.keybindings switch-windows "[]";
 gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "[]";
 gsettings set org.gnome.desktop.wm.keybindings toggle-above "[]";
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']";
-gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "[]";
+gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Super>w', '<Super>Up', '<Super>KP_5']";
 gsettings set org.gnome.desktop.wm.keybindings toggle-on-all-workspaces "[]";
 gsettings set org.gnome.desktop.wm.keybindings unmaximize "[]";
 echo "org.gnome.desktop.wm.keybindings has been changed successfully.";
+
+gsettings set org.gnome.mutter.keybindings cancel-input-capture "['<Super><Shift>Escape']";
+gsettings set org.gnome.mutter.keybindings rotate-monitor "['XF86RotateWindows']";
+gsettings set org.gnome.mutter.keybindings switch-monitor "['<Super>p', 'XF86Display']";
+gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Super>a', '<Super>Left', '<Super>KP_4']";
+gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Super>d', '<Super>Right', '<Super>KP_6']";
+echo "org.gnome.mutter.keybindings has been changed successfully.";
 
 gsettings set org.gnome.shell.keybindings focus-active-notification "[]";
 gsettings set org.gnome.shell.keybindings open-new-window-application-1 "[]";
@@ -399,11 +406,11 @@ gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomright-quart
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomright-quarter-ignore-ta '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-edit-mode '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half "['<Super>a', '<Super>Left', '<Super>KP_4']";
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half-ignore-ta '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize "['<Super>w', '<Super>Up', '<Super>KP_5']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half "['<Super>d', '<Super>Right', '<Super>KP_6']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half-ignore-ta '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize-horizontally '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize-vertically '[]';
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half "['<Super>d', '<Super>Right', '<Super>KP_6']";
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half-ignore-ta '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-top-half "['<Super>KP_8']";
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-top-half-ignore-ta '[]';
