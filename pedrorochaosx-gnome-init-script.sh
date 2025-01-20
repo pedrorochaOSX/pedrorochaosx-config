@@ -475,7 +475,7 @@ cat << 'catEND' > p-lsblk.sh
 lsblk -o NAME,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS -J;
 lsblk -o NAME,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS
 catEND
-chmod +x prosx-lsblk.sh
+chmod +x p-lsblk.sh
 
 echo "5/5 Loading p-gsettings.sh";
 ./p-gsettings.sh;
