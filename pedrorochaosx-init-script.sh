@@ -1,9 +1,9 @@
 cd;
-echo "1/5 Creating p-gsettings.sh";
+echo "1/13 Creating p-gsettings.sh";
 cat << 'catEND' > p-gsettings.sh
 #!/bin/bash
 
-echo "1/8 Changing org.gnome.desktop.wm.keybindings";
+echo "6/13 Changing org.gnome.desktop.wm.keybindings";
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "['<Super>e']";
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "[]";
 gsettings set org.gnome.desktop.wm.keybindings begin-move "[]";
@@ -89,14 +89,14 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Super>w', '<
 gsettings set org.gnome.desktop.wm.keybindings toggle-on-all-workspaces "[]";
 gsettings set org.gnome.desktop.wm.keybindings unmaximize "[]";
 
-echo "2/8 Changing org.gnome.mutter.keybindings";
+echo "7/13 Changing org.gnome.mutter.keybindings";
 gsettings set org.gnome.mutter.keybindings cancel-input-capture "['<Super><Shift>Escape']";
 gsettings set org.gnome.mutter.keybindings rotate-monitor "['XF86RotateWindows']";
 gsettings set org.gnome.mutter.keybindings switch-monitor "['<Super>p', 'XF86Display']";
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Super>a', '<Super>Left', '<Super>KP_4']";
 gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Super>d', '<Super>Right', '<Super>KP_6']";
 
-echo "3/8 Changing org.gnome.shell.keybindings";
+echo "8/13 Changing org.gnome.shell.keybindings";
 gsettings set org.gnome.shell.keybindings focus-active-notification "[]";
 gsettings set org.gnome.shell.keybindings open-new-window-application-1 "[]";
 gsettings set org.gnome.shell.keybindings open-new-window-application-2 "[]";
@@ -127,7 +127,7 @@ gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>v']";
 gsettings set org.gnome.shell.keybindings toggle-overview "[]";
 gsettings set org.gnome.shell.keybindings toggle-quick-settings "['<Super>b']";
 
-echo "4/8 Changing org.gnome.settings-daemon.plugins.media-keys";
+echo "9/13 Changing org.gnome.settings-daemon.plugins.media-keys";
 gsettings set org.gnome.settings-daemon.plugins.media-keys battery-status "[]";
 gsettings set org.gnome.settings-daemon.plugins.media-keys battery-status-static "['XF86Battery']";
 gsettings set org.gnome.settings-daemon.plugins.media-keys calculator "[]";
@@ -231,7 +231,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up-static "[]"
 gsettings set org.gnome.settings-daemon.plugins.media-keys www "[]";
 gsettings set org.gnome.settings-daemon.plugins.media-keys www-static "['XF86WWW']";
 
-echo "5/8 Changing org.gnome.shell.extensions.dash-to-dock";
+echo "10/13 Changing org.gnome.shell.extensions.dash-to-dock";
 gsettings set org.gnome.shell.extensions.dash-to-dock activate-single-window true;
 gsettings set org.gnome.shell.extensions.dash-to-dock always-center-icons false;
 gsettings set org.gnome.shell.extensions.dash-to-dock animate-show-apps true;
@@ -341,7 +341,7 @@ gsettings set org.gnome.shell.extensions.dash-to-dock transparency-mode 'DEFAULT
 gsettings set org.gnome.shell.extensions.dash-to-dock unity-backlit-items false;
 gsettings set org.gnome.shell.extensions.dash-to-dock workspace-agnostic-urgent-windows true;
 
-echo "6/8 Changing org.gnome.shell.extensions.tiling-assistant";
+echo "11/13 Changing org.gnome.shell.extensions.tiling-assistant";
 gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout0 '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout1 '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant activate-layout10 '[]';
@@ -428,12 +428,12 @@ gsettings set org.gnome.shell.extensions.tiling-assistant toggle-tiling-popup '[
 gsettings set org.gnome.shell.extensions.tiling-assistant vertical-preview-area 15;
 gsettings set org.gnome.shell.extensions.tiling-assistant window-gap 0;
 
-echo "7/8 Changing org.gnome.settings-daemon.plugins.power";
+echo "12/13 Changing org.gnome.settings-daemon.plugins.power";
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-ac-action 'suspend';
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-battery-action 'suspend';
 gsettings set org.gnome.settings-daemon.plugins.power lid-close-suspend-with-external-monitor false;
 
-echo "8/8 Changing org.gnome.desktop.peripherals.keyboard";
+echo "13/13 Changing org.gnome.desktop.peripherals.keyboard";
 gsettings set org.gnome.desktop.peripherals.keyboard delay "uint32 250";
 gsettings set org.gnome.desktop.peripherals.keyboard repeat true
 gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval "uint32 15";
@@ -442,7 +442,7 @@ read -n 1 -s -r -p "Press Q key to finish..."
 catEND
 chmod +x p-gsettings.sh;
 
-echo "2/5 Creating p-gterminal.preferences";
+echo "2/13 Creating p-gterminal.preferences";
 cat << 'catEND' > p-gterminal.preferences
 [legacy/profiles:]
 default='b1dcc9dd-5262-4d8d-a863-c897e6d979b9'
@@ -463,19 +463,19 @@ use-transparent-background=true
 visible-name='pedrorochaosx'
 catEND
 
-echo "3/5 Loading p-gterminal.preferences";
+echo "3/13 Loading p-gterminal.preferences";
 cat << 'catEND' > p-gterminal.sh
 cat ~/p-gterminal.preferences | dconf load /org/gnome/terminal/
 catEND
 chmod +x p-gterminal.sh;
 ./p-gterminal.sh;
 
-echo "4/5 Creating p-lsblk.sh";
+echo "4/13 Creating p-lsblk.sh";
 cat << 'catEND' > p-lsblk.sh
 lsblk -o NAME,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS -J;
 lsblk -o NAME,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS
 catEND
 chmod +x p-lsblk.sh
 
-echo "5/5 Loading p-gsettings.sh";
+echo "5/13 Loading p-gsettings.sh";
 ./p-gsettings.sh;
