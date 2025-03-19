@@ -1,11 +1,30 @@
 # pedrorochaosx-config
-My default settings.
+Scripts for my settings.
 ## Just run the scripts
-Gnome settings script:
+Install curl:
 ```bash
-curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/pedrorochaosx-init-script.sh" | bash
+sudo apt install -y curl
 ```
-Apps script:
+Install packages:
 ```bash
-curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/pedrorochaosx-apps-script.sh" | bash
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/install-packages.sh" | bash
+```
+Load Gnome settings:
+```bash
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/gnome-settings.sh" | bash
+```
+Zsh config:
+```bash
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/zsh-config.sh" | bash
+```
+Neovim config:
+```bash
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/neovim-config.sh" | bash
+```
+Run all the scripts:
+```bash
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/install-packages.sh" | bash;
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/gnome-settings.sh" | bash;
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/zsh-config.sh" | bash;
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/neovim-config.sh" | bash;
 ```
