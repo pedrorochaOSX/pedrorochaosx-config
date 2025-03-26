@@ -47,7 +47,10 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
-alias pupdate='sudo apt update && apt list --upgradable'
+alias aptu='sudo apt update && apt list --upgradable'
+alias aptlu='apt list --upgradable'
+alias aptli='apt list --installed'
+alias aptupg='sudo apt upgrade -y'
 alias plsblk='lsblk -o NAME,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS -J; lsblk -o NAME,TYPE,FSTYPE,FSUSE%,FSAVAIL,SIZE,MOUNTPOINTS'
 catEND
 
