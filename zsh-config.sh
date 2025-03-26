@@ -1,10 +1,10 @@
 cd;
-echo "Verifying the default shell..."
+echo "Verifying the default shell..." &&
 if [[ "$SHELL" == "$(which zsh)" ]]; then
     echo "Zsh is the default shell!";
 else
-    echo "Zsh is not the default shell.";
-    echo "Setting Zsh as the default shell";
+    echo "Zsh is not the default shell." &&
+    echo "Setting Zsh as the default shell" &&
     chsh -s $(which zsh);
 fi
 
