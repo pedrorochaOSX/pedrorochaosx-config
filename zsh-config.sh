@@ -1,12 +1,11 @@
 cd;
-echo "Setting Zsh as the default shell";
-chsh -s $(which zsh);
-
 echo "Verifying the default shell..."
 if [[ "$SHELL" == "$(which zsh)" ]]; then
-    echo "Zsh is now the default shell!"
+    echo "Zsh is the default shell!";
 else
-    echo "Failed to set Zsh as the default shell."
+    echo "Zsh is not the default shell.";
+    echo "Setting Zsh as the default shell";
+    chsh -s $(which zsh);
 fi
 
 cat << 'catEND' > .zshrc
