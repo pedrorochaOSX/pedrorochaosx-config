@@ -9,4 +9,4 @@ cat <<'catEND' >> .gitconfig
 	logf = !git log --pretty=format:'%C(cyan)%H %h%d%n  %C(white)%s%n  %C(red)%cn (%ce) - %C(red)%ch (%cr)%C(reset)%n'
 	logs = !git log --pretty=format:'%C(cyan)%h %C(white)%s %C(red)%cn -  %C(red)%ch %C(reset)'
 	st = !git status -s
- catEND
+catEND
