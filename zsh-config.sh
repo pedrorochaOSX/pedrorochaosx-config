@@ -5,7 +5,7 @@ if [[ "$SHELL" == "$(which zsh)" ]]; then
 else
     echo "Zsh is not the default shell." &&
     echo "Setting Zsh as the default shell" &&
-    chsh -s $(which zsh);
+    sudo chsh -s $(which zsh);
 fi
 
 sudo cat <<'catEND' > /usr/share/zsh/functions/Prompts/prompt_pedrorochaosx_setup
