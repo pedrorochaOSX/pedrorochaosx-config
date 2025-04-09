@@ -113,7 +113,7 @@ gsettings set org.gnome.shell.keybindings screenshot-window "[]";
 gsettings set org.gnome.shell.keybindings shift-overview-down "['<Super>z']";
 gsettings set org.gnome.shell.keybindings shift-overview-up "['<Super>x']";
 gsettings set org.gnome.shell.keybindings show-screen-recording-ui "[]";
-gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Super>g']";
+gsettings set org.gnome.shell.keybindings show-screenshot-ui "['Shift<Super>s']";
 gsettings set org.gnome.shell.keybindings switch-to-application-1 "[]";
 gsettings set org.gnome.shell.keybindings switch-to-application-2 "[]";
 gsettings set org.gnome.shell.keybindings switch-to-application-3 "[]";
@@ -196,7 +196,7 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-dow
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up "[]";
 gsettings set org.gnome.settings-daemon.plugins.media-keys screen-brightness-up-static "['XF86MonBrightnessUp']";
 gsettings set org.gnome.settings-daemon.plugins.media-keys screenreader "[]";
-gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "['<Control><Super>q']";
+gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "['<Super>l']";
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver-static "['XF86ScreenSaver']";
 gsettings set org.gnome.settings-daemon.plugins.media-keys search "[]";
 gsettings set org.gnome.settings-daemon.plugins.media-keys search-static "['XF86Search']";
