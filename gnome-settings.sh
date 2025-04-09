@@ -3,7 +3,8 @@ echo "1/3 - Creating p-gsettings.sh";
 cat << 'catEND' > p-gsettings.sh
 #!/bin/bash
 
-echo "--- Running p-gsettings.sh ---";
+echo "---     Running p-gsettings.sh      ---";
+echo "--- Loading p-gterminal.preferences ---";
 echo "1/8 - Changing org.gnome.desktop.wm.keybindings";
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "['<Super>e']";
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "[]";
@@ -113,7 +114,7 @@ gsettings set org.gnome.shell.keybindings screenshot-window "[]";
 gsettings set org.gnome.shell.keybindings shift-overview-down "['<Super>z']";
 gsettings set org.gnome.shell.keybindings shift-overview-up "['<Super>x']";
 gsettings set org.gnome.shell.keybindings show-screen-recording-ui "[]";
-gsettings set org.gnome.shell.keybindings show-screenshot-ui "['Shift<Super>s']";
+gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Super>s']";
 gsettings set org.gnome.shell.keybindings switch-to-application-1 "[]";
 gsettings set org.gnome.shell.keybindings switch-to-application-2 "[]";
 gsettings set org.gnome.shell.keybindings switch-to-application-3 "[]";
