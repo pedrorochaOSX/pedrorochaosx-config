@@ -4,7 +4,6 @@ cat << 'catEND' > p-gsettings.sh
 #!/bin/bash
 
 echo "---     Running p-gsettings.sh      ---";
-echo "--- Loading p-gterminal.preferences ---";
 echo "1/8 - Changing org.gnome.desktop.wm.keybindings";
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "['<Super>e']";
 gsettings set org.gnome.desktop.wm.keybindings always-on-top "[]";
