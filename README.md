@@ -1,5 +1,4 @@
 # pedrorochaosx-config
-Scripts for my settings.
 ## Just run the scripts
 Install curl:
 ```bash
