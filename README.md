@@ -1,5 +1,4 @@
 # pedrorochaosx-config
-## Just run the scripts
 Install curl:
 ```bash
 sudo apt install -y curl
