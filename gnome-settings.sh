@@ -158,8 +158,8 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-u
 gsettings set org.gnome.settings-daemon.plugins.media-keys keyboard-brightness-up-static "['XF86KbdBrightnessUp']";
 gsettings set org.gnome.settings-daemon.plugins.media-keys logout "[]";
 gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier "['<Super>1']";
-gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-in "['<Super>2']";
-gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-out "['<Super>3']";
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-in "['<Super>3']";
+gsettings set org.gnome.settings-daemon.plugins.media-keys magnifier-zoom-out "['<Super>2']";
 gsettings set org.gnome.settings-daemon.plugins.media-keys media "[]";
 gsettings set org.gnome.settings-daemon.plugins.media-keys media-static "['XF86AudioMedia']";
 gsettings set org.gnome.settings-daemon.plugins.media-keys mic-mute "[]";
@@ -408,9 +408,9 @@ gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomleft-quarte
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomright-quarter "['<Super>KP_3']";
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-bottomright-quarter-ignore-ta '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-edit-mode '[]';
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half "['<Super>a', '<Super>Left', '<Super>KP_4']";
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize "['<Super>w', '<Super>Up', '<Super>KP_5']";
-gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half "['<Super>d', '<Super>Right', '<Super>KP_6']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half "['<Super>r', '<Super>Left', '<Super>KP_4']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize "['<Super>e', '<Super>Up', '<Super>KP_5']";
+gsettings set org.gnome.shell.extensions.tiling-assistant tile-right-half "['<Super>f', '<Super>Right', '<Super>KP_6']";
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-left-half-ignore-ta '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize-horizontally '[]';
 gsettings set org.gnome.shell.extensions.tiling-assistant tile-maximize-vertically '[]';
@@ -451,16 +451,16 @@ list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9']
 
 [legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
 background-color='rgb(28,28,28)'
-background-transparency-percent=9
+background-transparency-percent=0
 backspace-binding='ascii-delete'
 cursor-blink-mode='on'
 cursor-shape='block'
-font='Noto Mono 12'
+font='JetBrainsMono Nerd Font 12'
 foreground-color='rgb(208,207,204)'
 use-system-font=false
 use-theme-colors=false
 use-theme-transparency=false
-use-transparent-background=true
+use-transparent-background=false
 visible-name='pedrorochaosx'
 catEND
 
