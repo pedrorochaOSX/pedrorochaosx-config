@@ -1,11 +1,12 @@
 # pedrorochaosx-config
-Install curl:
-```bash
-sudo apt install -y curl
-```
 Install packages:
 ```bash
-curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/install-packages.sh" | bash
+echo "1/2 - Installing Flatpak";
+sudo apt install -y flatpak &&
+sudo apt install -y gnome-software-plugin-flatpak &&
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo;
+echo "2/2 - Installing packages";
+sudo apt install -y curl git zsh wget zip gnome-tweaks neovim python3-neovim transmission file-roller vlc htop audacious cheese;
 ```
 Load Gnome settings:
 ```bash
