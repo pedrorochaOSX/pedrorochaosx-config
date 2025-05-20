@@ -1,4 +1,4 @@
-# pedrorochaosx-config
+# pedrorochaosx dotfiles
 Install packages:
 ```bash
 echo "1/2 - Installing Flatpak";
