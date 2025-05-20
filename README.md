@@ -10,17 +10,17 @@ sudo apt install -y curl git zsh wget zip gnome-tweaks neovim python3-neovim tra
 ```
 Gnome settings:
 ```bash
-curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/gnome-settings.sh" | bash
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/dotfiles/refs/heads/main/gnome-settings.sh" | bash
 ```
 Zsh settings:
 ```bash
-curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/zsh-config.sh" | bash
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/dotfiles/refs/heads/main/zsh-config.sh" | bash
 ```
 Update .gitconfig:
 ```bash
-curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/update_git_config.sh" | bash
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/dotfiles/refs/heads/main/update_git_config.sh" | bash
 ```
 Neovim settings:
 ```bash
-curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/pedrorochaosx-config/refs/heads/main/neovim-config.sh" | bash
+curl -sL "https://raw.githubusercontent.com/pedrorochaOSX/dotfiles/refs/heads/main/neovim-config.sh" | bash
 ```
